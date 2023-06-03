@@ -5,7 +5,7 @@ import java.util.List;
 
 import Domen.Product;
 
-public class VendingMachine {
+public class VendingMachine implements VendingMachineInterface {
     private List<Product> products;
 
     /**
