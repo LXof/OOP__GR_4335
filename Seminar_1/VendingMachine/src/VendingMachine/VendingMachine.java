@@ -9,6 +9,22 @@ public class VendingMachine {
     private List<Product> products;
 
     /**
+     * Конструктор по умолчанию, который создает пустой список продуктов.
+     */
+    public VendingMachine() {
+        products = new ArrayList<>();
+    }
+
+    /**
+     * Конструктор с параметром для инициализации списка продуктов.
+     * 
+     * @param productList   Список исходных продуктов
+     */
+    public VendingMachine(List<Product> productList) {
+        this.products = new ArrayList<>(productList);
+    }
+
+    /**
      * Метод для инициализации списка продуктов в торговом автомате.
      * 
      * @param productList   Список исходных продуктов
