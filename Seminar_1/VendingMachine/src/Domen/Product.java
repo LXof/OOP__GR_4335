@@ -3,7 +3,7 @@ package Domen;
 /**
  * Класс, представляющий товар.
  */
-public class Product {
+public abstract class Product {
     
     private int id;             // ID товара
     private String name;        // Название товара
@@ -12,6 +12,7 @@ public class Product {
     private String category;    // Категория товара
     private int quantity;       // Количество товаров на складе
     
+
     /**
      * Конструктор класса Product.
      * 
@@ -133,4 +134,6 @@ public class Product {
             this.quantity = 0;
         }
     }
+
+    public abstract void use();
 }
