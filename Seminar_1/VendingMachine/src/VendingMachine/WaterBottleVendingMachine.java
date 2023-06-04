@@ -16,6 +16,7 @@ public class WaterBottleVendingMachine extends VendingMachine implements Vending
     @Override
     public void initProducts(List<Product> productList) {
         super.initProducts(productList);
+        initProducts(productList);
     }
 
     @Override
