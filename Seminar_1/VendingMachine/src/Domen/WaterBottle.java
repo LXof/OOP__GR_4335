@@ -51,4 +51,17 @@ public class WaterBottle extends Product {
     public void use() {
         System.out.println("Пейте воду из бутылки");
     }    
+
+    @Override
+    public String toString() {
+        return "WaterBottle{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", price=" + getPrice() +
+                ", description='" + getDescription() + '\'' +
+                ", category='" + getCategory() + '\'' +
+                ", quantity=" + getQuantity() +
+                ", capacity=" + capacity +
+                '}';
+    }
 }
